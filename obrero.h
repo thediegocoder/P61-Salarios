@@ -17,8 +17,6 @@ public:
     explicit Obrero(QObject *parent = nullptr);
     Obrero(const QString &nombre, int horas, TipoJornada jornada);
 
-
-
     const QString &nombre() const;
     void setNombre(const QString &newNombre);
     int horas() const;
@@ -32,6 +30,8 @@ public:
     double descuento() const;
     void setDescuento(double newDescuento);
 
+    QString toString();
+
 signals:
 
 private:
@@ -41,6 +41,8 @@ private:
     double m_salarioBruto;
     double m_salarioNeto;
     double m_descuento;
+
+    QString jornada2String();
 };
 
 #endif // OBRERO_H

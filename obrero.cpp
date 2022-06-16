@@ -9,7 +9,11 @@ Obrero::Obrero(QObject *parent)
 Obrero::Obrero(const QString &nombre, int horas, TipoJornada jornada) : m_nombre(nombre),
     m_horas(horas),
     m_jornada(jornada)
-{}
+{
+    m_salarioBruto = 0;
+    m_descuento = 0;
+    m_salarioNeto = 0;
+}
 
 const QString &Obrero::nombre() const
 {
