@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include <QDebug>
 #include <QMessageBox>
+#include <QFileDialog>
+
 
 #include "obrero.h"
 #include "controlador.h"
@@ -23,8 +25,18 @@ public:
 private slots:
     void on_btnCalcular_clicked();
 
+    void on_actionNuevo_triggered();
+
+    void on_actionCalcular_triggered();
+
+    void on_actionSalir_triggered();
+
+    void on_actionGuardar_triggered();
+
 private:
     Ui::Salarios *ui;
     Controlador *m_contolador;
+    void limpiar();
+    void calcular();
 };
 #endif // SALARIOS_H
