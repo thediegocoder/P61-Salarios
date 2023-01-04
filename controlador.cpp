@@ -34,7 +34,7 @@ bool Controlador::calcular()
     // Calculo de horas extra
     int horas = m_modelo->horas();
     int horasExtra = 0;
-    if (m_modelo->horas() > 40){
+    if (horas > 40){
         horasExtra = m_modelo->horas() - 40;
         horas = 40;
     }
