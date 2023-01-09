@@ -35,6 +35,8 @@ private slots:
 
     void on_actionGuardar_triggered();
 
+    void on_actionAbrir_triggered();
+
     void on_actionAcerca_de_triggered();
 
 private:
